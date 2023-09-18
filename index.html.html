@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame">
+    <div class="div1">
+        <h1 style="text-align: center; font-size:36px ; color: white;">DOM Manipulation</h1>
+     <div class="div2">
+        <button id="btn1">change image src[1]</button>
+        <button id="btn2">change image src[2]</button>
+    </div>
+
+        <div class="div2">
+            <button id="btn3">change image src[3]</button>
+            <button id="btn4">change image src[4]</button>
+         </div>
+         <div class="div3">
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000" alt="" id="img">
+         </div>
+    </div>
+    </div>
+
+<script>
+    document.getElementById("btn1")
+    document.getElementById("btn2")
+    document.getElementById("btn3")
+    document.getElementById("btn4")
+
+
+    console.log(document.getElementById("btn1"))
+    console.log(document.getElementById("btn2"))
+    console.log(document.getElementById("btn3"))
+    console.log(document.getElementById("btn4"))
+
+    let button1=document.getElementById("btn1");
+    let button2=document.getElementById("btn2");
+    let button3=document.getElementById("btn3");
+    let button4=document.getElementById("btn4");
+
+
+   
+
+    document.getElementById("img")
+    console.log(document.getElementById("img"))
+    let image=document.getElementById("img");
+
+    button1.addEventListener("click", function(params){
+     image.src= "https://wallpapers.com/images/featured/beautiful-3vau5vtfa3qn7k8v.jpg"
+    }
+    )
+    button2.addEventListener("click", function(params){
+     image.src="https://img.freepik.com/premium-photo/mountain-lake-with-mountain-background_865967-416815.jpg"            
+    }
+    )
+
+
+     button3.addEventListener("click", function(params){
+     image.src="https://c4.wallpaperflare.com/wallpaper/551/492/927/photography-reflection-house-lake-wallpaper-preview.jpg"              
+    }
+    )
+
+
+     button4.addEventListener("click", function(params){
+     image.src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg "          
+    }
+    )
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+<style>
+    .frame{
+        background-color: rgb(28, 28, 28);
+        height: 100vh;
+        width: 100%;
+
+    }
+    .div2{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .div1{
+        padding-top: 150px;
+    }
+
+    #btn1{
+        margin-top: 6px;
+        border: dotted;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 10px;
+        
+    
+
+    }
+
+    #btn2{
+        margin-left: 12px;
+        margin-top: 6px;
+        border: dotted;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 10px;
+    }
+    #btn3{
+        
+        margin-top: 6px;
+        border: dotted; 
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 10px;
+    }
+    #btn4{
+        margin-left: 12px;
+        margin-top: 6px;
+        border: dotted;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-right: 10px;
+    }
+    #img{
+        width: 360px;
+        height: 300px;
+        border-radius: 5px;
+    }
+    .div3{
+        
+      padding-left: 580px;
+      margin-top: 20px;
+    }
+</style>
